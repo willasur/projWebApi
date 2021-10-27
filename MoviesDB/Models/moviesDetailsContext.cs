@@ -1,14 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace MoviesDB.Models
 {
-    public class TodoContext : DbContext
+    public class MoviesDBContext : DbContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options)
+        public MoviesDBContext(DbContextOptions<MoviesDBContext> options)
             : base(options)
         {
         }
 
-        public DbSet<movieDetails> TodoItems { get; set; }
+        public DbSet<movieDetails> MoviesDB { get; set; }
     }
 }

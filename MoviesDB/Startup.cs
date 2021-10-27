@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MoviesDB.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MoviesDB
 {
@@ -28,6 +30,9 @@ namespace MoviesDB
         {
 
             services.AddControllers();
+
+            services.AddDbContext<MoviesDBContext>(opt =>
+                                              opt.UseInMemoryDatabase("MoviesDB"));
             //services.AddSwaggerGen(c =>
             //{
             //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MoviesDB", Version = "v1" });

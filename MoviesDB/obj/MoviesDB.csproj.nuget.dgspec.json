@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj": {}
+    "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj": {
+    "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj",
+        "projectUniqueName": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj",
         "projectName": "MoviesDB",
-        "projectPath": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj",
-        "packagesPath": "C:\\Users\\wiasuro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\obj\\",
+        "projectPath": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj",
+        "packagesPath": "C:\\Users\\erwoodle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wiasuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\erwoodle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +40,27 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
