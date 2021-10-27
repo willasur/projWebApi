@@ -7358,19 +7358,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wiasuro\\.nuget\\packages\\": {}
+    "C:\\Users\\erwoodle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj",
+      "projectUniqueName": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj",
       "projectName": "MoviesDB",
-      "projectPath": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\MoviesDB.csproj",
-      "packagesPath": "C:\\Users\\wiasuro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wiasuro\\source\\MoviesDB\\MoviesDB\\obj\\",
+      "projectPath": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\MoviesDB.csproj",
+      "packagesPath": "C:\\Users\\erwoodle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erwoodle\\Source\\Repos\\projWebApi\\MoviesDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\wiasuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erwoodle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

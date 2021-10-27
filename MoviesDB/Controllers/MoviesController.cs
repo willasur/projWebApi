@@ -9,11 +9,9 @@ using MoviesDB.Models;
 
 namespace MoviesDB.Controllers
 {
-<<<<<<< HEAD
-    [Route("api/MoviesDB/")]
-=======
-    [Route("api/moviesdb")]
->>>>>>> a90971a957987361b4c4d1b7533322dd6df464c8
+
+   [Route("api/moviesdb")]
+
     [ApiController]
     public class MoviesController : ControllerBase
     {
