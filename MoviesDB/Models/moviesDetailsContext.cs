@@ -14,5 +14,8 @@ namespace MoviesDB.Models
         }
 
         public DbSet<movieDetails> MoviesDB { get; set; }
+
+        public DbSet<TVShows> TVShowsDB { get; set; }
+ 
     }
 }
