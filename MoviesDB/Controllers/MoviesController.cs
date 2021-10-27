@@ -15,25 +15,25 @@ namespace MoviesDB.Controllers
     [Route("api/moviesdb")]
 >>>>>>> a90971a957987361b4c4d1b7533322dd6df464c8
     [ApiController]
-    public class movieDetailsController : ControllerBase
+    public class MoviesController : ControllerBase
     {
         private readonly MoviesDBContext _context;
 
-        public movieDetailsController(MoviesDBContext context)
+        public MoviesController(MoviesDBContext context)
         {
             _context = context;
         }
 
         // GET: api/movieDetails
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<movieDetails>>> GetMoviesDB()
+        public async Task<ActionResult<IEnumerable<Movies>>> GetMoviesDB()
         {
             return await _context.MoviesDB.ToListAsync();
         }
 
         // GET: api/movieDetails/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<movieDetails>> GetmovieDetails(int id)
+        public async Task<ActionResult<Movies>> GetmovieDetails(int id)
         {
             var movieDetails = await _context.MoviesDB.FindAsync(id);
 
@@ -48,7 +48,7 @@ namespace MoviesDB.Controllers
         // PUT: api/movieDetails/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutmovieDetails(int id, movieDetails movieDetails)
+        public async Task<IActionResult> PutmovieDetails(int id, Movies movieDetails)
         {
             if (id != movieDetails.Id)
             {
@@ -79,7 +79,7 @@ namespace MoviesDB.Controllers
         // POST: api/movieDetails
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<movieDetails>> PostmovieDetails(movieDetails movieDetails)
+        public async Task<ActionResult<Movies>> PostmovieDetails(Movies movieDetails)
         {
             _context.MoviesDB.Add(movieDetails);
             await _context.SaveChangesAsync();

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MoviesDB.Models
 {
-    public class movieDetails
+    public class Movies
     {
         public int Id { get; set; }
         public string Title { get; set; }
